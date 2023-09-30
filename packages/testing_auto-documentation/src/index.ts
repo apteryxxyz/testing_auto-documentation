@@ -77,6 +77,21 @@ export class Person {
     const currentYear = new Date().getFullYear();
     return currentYear - this.age;
   }
+
+  /**
+   * Checks if the person is a teenager (age between 13 and 19).
+   * @returns True if the person is a teenager, false otherwise.
+   * @example
+   * ```typescript
+   * const adult = new Person('John', 'Doe', 30);
+   * const teenager = new Person('Alice', 'Smith', 17);
+   * const isAdult = adult.isTeenager(); // false
+   * const isTeen = teenager.isTeenager(); // true
+   * ```
+   */
+  public isTeenager(): boolean {
+    return this.age >= 13 && this.age <= 19;
+  }
 }
 
 /**

@@ -62,6 +62,21 @@ export class Person {
   getFullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
+
+  /**
+   * Calculates the birth year of the person based on the current year and age.
+   * @returns The birth year of the person.
+   * @example
+   * ```typescript
+   * const person = new Person('John', 'Doe', 30);
+   * const birthYear = person.calculateBirthYear();
+   * // Assuming the current year is 2023, birthYear will be 1993
+   * ```
+   */
+  calculateBirthYear(): number {
+    const currentYear = new Date().getFullYear();
+    return currentYear - this.age;
+  }
 }
 
 /**
@@ -89,7 +104,7 @@ export const defaultPerson: IPerson = {
  * ```typescript
  * const person = { firstName: 'John', lastName: 'Doe', age: 30 };
  * const formattedName = formatName(person);
- * // formattedName will be 'John Doe'
+ * // formattedName will be 'Doe, John'
  * ```
  */
 export function formatName(person: IPerson): string {

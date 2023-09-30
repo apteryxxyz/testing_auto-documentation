@@ -1,0 +1,6 @@
+org: apteryxxyz
+name: testing_auto-documentation
+monoRepo: true
+packagePath: packages/testing_auto-documentation
+tagTemplate: '{{full-name}}@{{new-version}}'
+commitMessageTemplate: 'chore(release): {{full-name}} v{{new-version}}'

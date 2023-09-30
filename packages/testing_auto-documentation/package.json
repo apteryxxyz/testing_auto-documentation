@@ -7,14 +7,13 @@
     "build": "tsup",
     "docs": "api-extractor run --local --config api-extractor.json",
     "prepack": "pnpm run build && pnpm run docs",
-    "release": "release-it --config release.config.js"
+    "release": "pnpm run prepack && cliff-jumper"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.37.3",
-    "release-it": "^16.2.1",
     "tsup": "^7.2.0"
   }
 }

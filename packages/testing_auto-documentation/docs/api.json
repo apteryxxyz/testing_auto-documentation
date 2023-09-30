@@ -580,6 +580,37 @@
               "name": "getFullName"
             },
             {
+              "kind": "Method",
+              "canonicalReference": "@apteryxxyz/testing_auto-documentation!Person#isTeenager:member(1)",
+              "docComment": "/**\n * Checks if the person is a teenager (age between 13 and 19).\n *\n * @returns True if the person is a teenager, false otherwise.\n *\n * @example\n * ```typescript\n * const adult = new Person('John', 'Doe', 30);\n * const teenager = new Person('Alice', 'Smith', 17);\n * const isAdult = adult.isTeenager(); // false\n * const isTeen = teenager.isTeenager(); // true\n * ```\n *\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isTeenager(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "isTeenager"
+            },
+            {
               "kind": "Property",
               "canonicalReference": "@apteryxxyz/testing_auto-documentation!Person#lastName:member",
               "docComment": "",

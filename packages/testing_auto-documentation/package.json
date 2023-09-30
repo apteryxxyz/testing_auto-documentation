@@ -1,13 +1,13 @@
 {
   "name": "@apteryxxyz/testing_auto-documentation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup",
     "docs": "api-extractor run --local --config api-extractor.json",
     "prepack": "pnpm run build && pnpm run docs",
-    "release": "pnpm run prepack && cliff-jumper"
+    "release": "pnpm run prepack && git add docs/api.json && cliff-jumper"
   },
   "keywords": [],
   "author": "",

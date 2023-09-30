@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsup",
     "docs": "api-extractor run --local --config api-extractor.json",
+    "prepack": "pnpm run build && pnpm run docs",
     "release": "release-it --config release.config.js"
   },
   "keywords": [],

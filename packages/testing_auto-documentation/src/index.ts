@@ -47,7 +47,7 @@ export class Person {
    * const person = new Person('John', 'Doe', 30);
    * ```
    */
-  constructor(public firstName: string, public lastName: string, public age: number) {}
+  public constructor(public firstName: string, public lastName: string, public age: number) {}
 
   /**
    * Gets the full name of the person.
@@ -59,7 +59,7 @@ export class Person {
    * // fullName will be 'John Doe'
    * ```
    */
-  getFullName(): string {
+  public getFullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
@@ -73,7 +73,7 @@ export class Person {
    * // Assuming the current year is 2023, birthYear will be 1993
    * ```
    */
-  calculateBirthYear(): number {
+  public calculateBirthYear(): number {
     const currentYear = new Date().getFullYear();
     return currentYear - this.age;
   }

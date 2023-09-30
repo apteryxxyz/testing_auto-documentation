@@ -1,0 +1,19 @@
+{
+  "name": "@apteryxxyz/testing_auto-documentation",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "docs": "api-extractor run --local --config api-extractor.json",
+    "release": "release-it --config release.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.37.3",
+    "release-it": "^16.2.1",
+    "tsup": "^7.2.0"
+  }
+}

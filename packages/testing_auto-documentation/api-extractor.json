@@ -1,0 +1,8 @@
+{
+  "extends": "../../api-extractor.json",
+  "docModel": {
+    "enabled": true,
+    "projectFolderUrl": "https://github.com/apteryxxyz/testing_auto-documentation/tree/main/packages/next"
+  }
+}
+  
